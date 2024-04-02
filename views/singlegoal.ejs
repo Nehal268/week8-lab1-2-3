@@ -17,7 +17,10 @@
     
         <!-- Delete button -->
         <form
-          class="action-form">
+          class="action-form"
+          method="POST"
+          action="/single-goal/<%= goal._id %>?_method=DELETE"
+        >
           <button type="submit">delete</button>
         </form>
       </article>
